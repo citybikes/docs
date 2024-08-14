@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Citybikes Docs",
   description: "Citybikes documentation project",
+  head: [
+    ['link', { rel: "icon", type: "image/png", href: "/favicon.png"}],
+  ],
   cleanUrls: true,
   themeConfig: {
     logo: "/logo.svg",
