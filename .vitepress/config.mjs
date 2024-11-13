@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Citybikes Docs",
-  description: "Citybikes documentation project",
+  description: "Citybikes developer documentation",
   head: [
     ['link', { rel: "icon", type: "image/png", href: "/favicon.png"}],
   ],
@@ -17,24 +17,35 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'API documentation',
-        link: '/',
+        text: 'API Documentation',
         items: [
-            { text: 'Terms of Service', link: '/tos' },
+          { text: 'Using Citybikes data', link: '/api/' },
+          { text: 'v2', link: '/api/v2/' },
+          { text: 'gbfs', link: '/api/gbfs/' },
         ],
       },
       {
         text: 'pybikes',
+        link: '/pybikes/',
         items: [
-          { text: 'Getting Started', link: '/pybikes' },
+          { text: 'Contribute', link: '/pybikes/contribute' },
           { text: 'Test reports', link: '/pybikes/test-reports' },
         ],
       },
+      {
+        text: 'hyper',
+        link: '/hyper/',
+        items: [
+          { text: 'Getting Started', link: '/hyper/#getting-started' },
+          { text: 'Configuration', link: '/hyper/#configuration' },
+          { text: 'Implementing a subscriber', link: '/hyper/#implementing-a-subscriber' },
+        ]
+      }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
-      { icon: 'twitter', link: 'https://twitter.com/ctbikes' }
+      { icon: 'github', link: 'https://github.com/citybikes' },
+      { icon: 'mastodon', link: 'https://floss.social/@citybikes' },
     ],
     search: {
       provider: "local",
