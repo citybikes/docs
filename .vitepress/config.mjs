@@ -35,8 +35,8 @@ export default defineConfig({
       },
       {
         text: 'hyper',
-        link: '/hyper/',
         items: [
+          { text: 'Introduction', link: '/hyper/' },
           { text: 'Getting Started', link: '/hyper/#getting-started' },
           { text: 'Configuration', link: '/hyper/#configuration' },
           { text: 'Implementing a subscriber', link: '/hyper/#implementing-a-subscriber' },
