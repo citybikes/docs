@@ -20,15 +20,16 @@ export default defineConfig({
         text: 'API Documentation',
         items: [
           { text: 'Using Citybikes data', link: '/api/' },
-          { text: 'v2', link: '/api/v2/' },
+          { text: 'v2', link: '/api/' },
           { text: 'gbfs', link: '/api/gbfs/' },
+          { text: 'Terms of service', link: '/api/tos' },
         ],
       },
       {
         text: 'pybikes',
-        link: '/pybikes/',
         items: [
-          { text: 'Contribute', link: '/pybikes/contribute' },
+          { text: 'Introduction', link: '/pybikes/' },
+          { text: 'Contribute', link: 'https://github.com/eskerda/pybikes' },
           { text: 'Test reports', link: '/pybikes/test-reports' },
         ],
       },

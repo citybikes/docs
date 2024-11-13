@@ -19,7 +19,7 @@ updates.
 </figure>
 
 [hyper]: https://github.com/citybikes/hyper
-[pybikes]: /pybikes
+[pybikes]: /pybikes/
 
 ### hyper :: publisher
 
