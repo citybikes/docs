@@ -28,7 +28,7 @@ export default defineConfig({
       {
         text: 'pybikes',
         items: [
-          { text: 'Introduction', link: '/pybikes/' },
+          { text: 'Introduction', link: '/pybikes/#pybikes' },
           { text: 'Contribute', link: 'https://github.com/eskerda/pybikes' },
           { text: 'Test reports', link: '/pybikes/test-reports' },
         ],
@@ -36,7 +36,7 @@ export default defineConfig({
       {
         text: 'hyper',
         items: [
-          { text: 'Introduction', link: '/hyper/' },
+          { text: 'Introduction', link: '/hyper/#hyper' },
           { text: 'Getting Started', link: '/hyper/#getting-started' },
           { text: 'Configuration', link: '/hyper/#configuration' },
           { text: 'Implementing a subscriber', link: '/hyper/#implementing-a-subscriber' },
