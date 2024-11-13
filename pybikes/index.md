@@ -1,6 +1,6 @@
 # pybikes
 
-pybikes provides a set of tools to scrape bike sharing data from different
+[pybikes] provides a set of tools to scrape bike sharing data from different
 websites and APIs, thus providing a coherent and generalized set of classes
 and methods to access this sort of information.
 
@@ -8,6 +8,8 @@ The library is distributed and intended mainly for statistics and data
 sharing projects. More importantly, it powers the [CityBikes][1] project, and
 is composed of a set of classes and a pack of data files that provide instances
 for all different systems.
+
+[pybikes]: https://github.com/eskerda/pybikes
 
 Installation
 ------------
