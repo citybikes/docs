@@ -45,7 +45,7 @@ network.
 ### Installation
 
 ```shell
-pip install citybikes-hyper
+pip install git+https://github.com/citybikes/hyper.git
 ```
 
 ### Usage
