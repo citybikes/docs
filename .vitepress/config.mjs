@@ -6,6 +6,7 @@ export default defineConfig({
   description: "Citybikes developer documentation",
   head: [
     ['link', { rel: "icon", type: "image/png", href: "/favicon.png"}],
+    ['script', { defer: "", "data-domain": "docs.citybik.es", src: "https://stats.citybik.es/js/script.js" }],
   ],
   cleanUrls: true,
   themeConfig: {
