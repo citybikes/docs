@@ -4,6 +4,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Citybikes Docs",
   description: "Citybikes developer documentation",
+  sitemap: {
+    hostname: 'https://docs.citybik.es',
+  },
   head: [
     ['link', { rel: "icon", type: "image/png", href: "/favicon.png"}],
     ['script', { defer: "", "data-domain": "docs.citybik.es", src: "https://stats.citybik.es/js/script.js" }],
