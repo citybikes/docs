@@ -320,10 +320,11 @@ For python, the logging subscriber can be subclassed to create custom
 subscribers by extending the `handle_message` method.
 
 ```python
+import os
 import json
 import argparse
 
-from hyper import ZMQSubscriber
+from hyper.subscriber import ZMQSubscriber
 
 ZMQ_ADDR = os.getenv("ZMQ_ADDR", "tcp://127.0.0.1:5555")
 ZMQ_TOPIC = os.getenv("ZMQ_TOPIC", "")
@@ -342,4 +343,38 @@ if __name__ == "__main__":
     args, _ = parser.parse_known_args()
     subscriber = ExampleSubscriber(args.addr, args.topic)
     subscriber.reader()
+```
+
+### Using an asyncio subscriber
+
+To use a subscriber compatible with asyncio code, use `AZMQSubscriber` with an
+async `handle_message` method.
+
+```python
+import os
+import json
+import asyncio
+import argparse
+
+from hyper.subscriber import AZMQSubscriber
+
+ZMQ_ADDR = os.getenv("ZMQ_ADDR", "tcp://127.0.0.1:5555")
+ZMQ_TOPIC = os.getenv("ZMQ_TOPIC", "")
+
+class ExampleSubscriber(AZMQSubscriber):
+    async def handle_message(self, topic, message):
+        # Do something with the network
+        network = json.loads(message)
+        # ...
+
+async def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-a", "--addr", default=ZMQ_ADDR)
+    parser.add_argument("-t", "--topic", default=ZMQ_TOPIC)
+    args, _ = parser.parse_known_args()
+    subscriber = ExampleSubscriber(args.addr, args.topic)
+    await subscriber.reader()
+
+if __name__ == "__main__":
+    asyncio.run(main())
 ```
