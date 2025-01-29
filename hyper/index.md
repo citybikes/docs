@@ -126,8 +126,8 @@ $ hyper publisher -c config.py
 
 ```python
 
-from hyper.config import Config
-from hyper.publisher import DEFAULTS
+from citybikes.hyper.config import Config
+from citybikes.hyper.publisher import DEFAULTS
 
 schedule = Config(DEFAULTS, {
     # Run updates every 3 minutes
@@ -324,7 +324,7 @@ import os
 import json
 import argparse
 
-from hyper.subscriber import ZMQSubscriber
+from citybikes.hyper.subscriber import ZMQSubscriber
 
 ZMQ_ADDR = os.getenv("ZMQ_ADDR", "tcp://127.0.0.1:5555")
 ZMQ_TOPIC = os.getenv("ZMQ_TOPIC", "")
@@ -356,7 +356,7 @@ import json
 import asyncio
 import argparse
 
-from hyper.subscriber import AZMQSubscriber
+from citybikes.hyper.subscriber import AZMQSubscriber
 
 ZMQ_ADDR = os.getenv("ZMQ_ADDR", "tcp://127.0.0.1:5555")
 ZMQ_TOPIC = os.getenv("ZMQ_TOPIC", "")
