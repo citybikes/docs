@@ -163,7 +163,7 @@ GET https://api.citybik.es/gbfs/2/bicing/gbfs.json
 Available versions within network. [GBFS docs](https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#gbfs_versionsjson)
 
 ```json
-GET https://api.citybik.es/gbfs/2/gbfs_versions.json
+GET https://api.citybik.es/gbfs/2/bicing/gbfs_versions.json
 
 {
   "last_updated": 1741185567,
