@@ -4,8 +4,9 @@ outline: deep
 
 # Citybikes API Documentation
 
-The Citybikes API provides information for re-use: transport apps, research,
-visualizations, analytics. The following resources are available:
+The Citybikes API provides real-time and historical bike share data for re-use
+by transport apps, researchers, visualizations and analytics. The following
+resources are available.
 
 ### Real-time bike share information
 
@@ -27,8 +28,8 @@ and month, in Parquet format. More info at https://data.citybik.es
 ## Limits
 
 To ensure fair usage, the public API is limited to **300 requests per hour**.
-Rate limits reset every hour. Information about the limits can be inspected
-on the response headers:
+Rate limits reset every hour. You can inspect the limits in the response
+headers
 
 ```shell
 $ curl -I https://api.citybik.es/v2/networks
@@ -41,17 +42,19 @@ ratelimit-remaining: 297
 [...]
 ```
 
-If you need more requests, send us an email at info@citybik.es with information
-about your project and the number of requests per minute/hour needed. For most
-cases we are happy to provide an API key.
+If you need more requests, please contact us at info@citybik.es with details
+about your project and the number of requests you need per minute/hour. We're
+happy to provide an API key for most cases.
 
-Alternatively, if none of these options suit your project, you are welcome to
-run your own citybikes node: https://github.com/citybikes
+Alternatively, you can run your own Citybikes node, see: [pybikes] and [hyper].
+
+[pybikes]: /pybikes/
+[hyper]: /hyper/
 
 ## Using an API key
 
-You will get an email with an API key. Use it by adding a `x-api-key` header
-with your request.
+Once you receive an email with your API key, use it by adding the `x-api-key`
+header to your request:
 
 ```shell
 curl https://api.citybik.es/v2/networks \
