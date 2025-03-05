@@ -20,7 +20,7 @@ Available in the following formats:
 
 ### Historical bike share information
 
-Time-seriers records of bike share station status changes, organized by network
+Time-series records of bike share station status changes, organized by network
 and month, in Parquet format. More info at https://data.citybik.es
 
 
