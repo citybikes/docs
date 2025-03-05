@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# CityBikes API Documentation
+# Citybikes API Documentation
 
 The Citybikes API provides information for re-use: transport apps, research,
 visualizations, analytics. The following resources are available:
