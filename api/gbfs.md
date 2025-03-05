@@ -6,7 +6,7 @@ outline: deep
 This page explains how to use our [GBFS API endpoint][gbfs-api]. For info about
 the format specification itself, check their [documentation site][GBFS docs].
 
-As a clarification, when we talk about our own Citybikes format, we will refer
+As a clarification, when we talk about the Citybikes format, we will refer
 to it as [CB-V2], and when it is about GBFS, GBFS-v2, GBFS-v3, ...
 
 ### What is GBFS?
@@ -17,10 +17,10 @@ to it as [CB-V2], and when it is about GBFS, GBFS-v2, GBFS-v3, ...
 >
 > <cite>excerpt from https://gbfs.org</cite>
 
-As my own quick summary, GBFS is a standarized format that mobility operators
-use to share their information publicly. By supporting GBFS as an API format,
-we want to help push this specification forward by bridging the gap with all
-the networks that _do not_ use GBFS.
+GBFS is a standarized format that mobility operators use to share their
+information publicly. By supporting GBFS as an API format, we want to help push
+this specification forward by bridging the gap with all the networks that _do
+not_ use GBFS.
 
 If you are already using GBFS on your app then this page is for you - adding
 GBFS feeds from Citybikes will _just work_.
@@ -33,7 +33,7 @@ GBFS feeds from Citybikes will _just work_.
 
 ## Endpoints
 
-As a general rule, our endpoints look like:
+As a general rule, endpoints look like:
 
 ```
 GET https://api.citybik.es/gbfs/<version>/<network-id>/<feed-name>.json
