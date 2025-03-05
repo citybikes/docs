@@ -25,7 +25,7 @@ the networks that _do not_ use GBFS.
 If you are already using GBFS on your app then this page is for you - adding
 GBFS feeds from Citybikes will _just work_.
 
-[CB-V2]: /api/
+[CB-V2]: /api/v2
 [GBFS]: https://gbfs.org
 [GBFS docs]: https://gbfs.org/documentation
 [pybikes]: https://github.com/eskerda/pybikes
