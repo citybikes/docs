@@ -24,8 +24,8 @@ export default defineConfig({
         text: 'API Documentation',
         items: [
           { text: 'Using Citybikes data', link: '/api/' },
-          { text: 'v2', link: '/api/' },
-          { text: 'gbfs', link: '/api/gbfs/' },
+          { text: 'Citybikes v2', link: '/api/v2' },
+          { text: 'GBFS', link: '/api/gbfs' },
           { text: 'Terms of service', link: '/api/tos' },
         ],
       },
