@@ -6,7 +6,7 @@ information on how to use, run and contribute to the project.
 ## Getting started
 
 * [Documentation][api-docs] on using the public [CityBikes API][api].
-* Contribute to [pybikes] to add a new networks, report or fix an issue.
+* Contribute to [pybikes] to add a new network, report or fix an issue.
 * Running citybikes locally with [hyper].
 * Help us improve these docs by contributing to https://github.com/citybikes/docs
 
