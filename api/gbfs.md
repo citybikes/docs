@@ -151,6 +151,10 @@ GET https://api.citybik.es/gbfs/2/bicing/gbfs.json
         {
           "name": "station_status",
           "url": "https://api.citybik.es/gbfs/2/bicing/station_status.json"
+        },
+        {
+          "name": "free_bike_status",
+          "url": "https://api.citybik.es/gbfs/2/bicing/free_bike_status.json"
         }
       ]
     }
@@ -343,6 +347,44 @@ GET https://api.citybik.es/gbfs/2/bicing/station_status.json
 }
 ```
 
+#### free_bike_status.json
+
+Free roaming vehicles (not associated with stations) information. [GBFS docs](https://github.com/MobilityData/gbfs/blob/v2.3/gbfs.md#free_bike_statusjson)
+
+```json
+GET https://api.citybik.es/gbfs/2/divvy/free_bike_status.json
+
+{
+  "last_updated": 1744907527,
+  "ttl": 0,
+  "version": "2.3",
+  "data": {
+    "bikes": [
+      {
+        "bike_id": "000d2b170283551da444b154dff3a485",
+        "vehicle_type_id": "cb:vehicle:ebike",
+        "lat": 41.960238,
+        "lon": -87.754005,
+        "is_reserved": false,
+        "is_disabled": false,
+        "last_reported": 1744907523
+      },
+      {
+        "bike_id": "000d9fa5719ed84b3da4cb0892b2ad2a",
+        "vehicle_type_id": "cb:vehicle:ebike",
+        "lat": 42.048133,
+        "lon": -87.683474,
+        "is_reserved": false,
+        "is_disabled": false,
+        "last_reported": 1744907523
+      },
+      ...
+    ]
+  }
+}
+```
+
+
 ### GBFS v3
 
 We support the [version 3.0][GBFS-V3.0-docs] of the GBFS specification.
@@ -412,6 +454,10 @@ GET https://api.citybik.es/gbfs/3/bicing/gbfs.json
       {
         "name": "vehicle_types",
         "url": "https://api.citybik.es/gbfs/3/bicing/vehicle_types.json"
+      },
+      {
+        "name": "vehicle_status",
+        "url": "https://api.citybik.es/gbfs/3/bicing/vehicle_status.json"
       },
       {
         "name": "station_information",
@@ -522,6 +568,45 @@ GET https://api.citybik.es/gbfs/3/bicing/vehicle_types.json
   }
 }
 ```
+
+#### vehicle_status.json
+
+Free roaming vehicles (not associated with stations) information. [GBFS docs](https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#vehicle_statusjson)
+
+
+```json
+GET https://api.citybik.es/gbfs/3/divvy/vehicle_status.json
+
+{
+  "last_updated": "2025-04-17T16:38:06",
+  "ttl": 0,
+  "version": "3.0",
+  "data": {
+    "vehicles": [
+      {
+        "vehicle_id": "000d2b170283551da444b154dff3a485",
+        "vehicle_type_id": "cb:vehicle:ebike",
+        "lat": 41.960174,
+        "lon": -87.754098,
+        "is_reserved": false,
+        "is_disabled": false,
+        "last_reported": "2025-04-17T16:38:03.204104+00:00"
+      },
+      {
+        "vehicle_id": "000d9fa5719ed84b3da4cb0892b2ad2a",
+        "vehicle_type_id": "cb:vehicle:ebike",
+        "lat": 42.048133,
+        "lon": -87.683474,
+        "is_reserved": false,
+        "is_disabled": false,
+        "last_reported": "2025-04-17T16:38:03.204502+00:00"
+      },
+      ...
+    ]
+  }
+}
+```
+
 #### station_information.json
 
 Information about the stations sans status. [GBFS docs](https://github.com/MobilityData/gbfs/blob/v3.0/gbfs.md#station_informationjson)
